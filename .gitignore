@@ -1,0 +1,14 @@
+###> files ###
+/.DS_Store
+/composer.lock
+###< files ###
+
+###> directories ###
+/.idea/
+/vendor/
+###< directories ###
+
+###> friendsofphp/php-cs-fixer ###
+/.php-cs-fixer.php
+/.php-cs-fixer.cache
+###< friendsofphp/php-cs-fixer ###

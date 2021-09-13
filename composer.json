@@ -1,0 +1,48 @@
+{
+    "name": "bacart/symfony-aware",
+    "description": "Symfony service awareness library",
+    "type": "library",
+    "keywords": [
+        "php",
+        "symfony",
+        "library"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "doctrine/orm": "^2.9",
+        "doctrine/mongodb-odm": "^2.2",
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "phpstan/phpstan": "^0.12",
+        "symfony/framework-bundle": "^5.3",
+        "symfony/lock": "^5.3",
+        "symfony/messenger": "^5.3",
+        "symfony/security-core": "^5.3",
+        "symfony/security-csrf": "^5.3",
+        "symfony/security-http": "^5.3",
+        "symfony/translation": "^5.3",
+        "symfony/validator": "^5.3",
+        "twig/twig": "^3.3"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Bacart\\SymfonyAware\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Bacart",
+            "email": "alex@bacart.net"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.2-dev"
+        }
+    }
+}
