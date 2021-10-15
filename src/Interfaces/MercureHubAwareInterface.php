@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Psr\Log\LoggerInterface;
+use Symfony\Component\Mercure\HubInterface;
 
-interface LoggerAwareInterface
+interface MercureHubAwareInterface
 {
-    public function setLogger(LoggerInterface $logger): void;
+    public function setMercureHub(HubInterface $MercureHub): void;
 }
