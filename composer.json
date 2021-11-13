@@ -2,6 +2,7 @@
     "name": "bacart/symfony-aware",
     "description": "Symfony service awareness library",
     "type": "library",
+    "minimum-stability": "beta",
     "keywords": [
         "php",
         "symfony",
@@ -9,22 +10,21 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0"
+        "php": "^8.1"
     },
     "require-dev": {
         "doctrine/orm": "^2.10",
-        "doctrine/mongodb-odm": "^2.2",
         "friendsofphp/php-cs-fixer": "^3.2",
         "phpstan/phpstan": "^0.12",
-        "symfony/framework-bundle": "^5.3",
-        "symfony/lock": "^5.3",
+        "symfony/framework-bundle": "^5.4",
+        "symfony/lock": "^5.4",
         "symfony/mercure": "^0.6",
-        "symfony/messenger": "^5.3",
-        "symfony/security-core": "^5.3",
-        "symfony/security-csrf": "^5.3",
-        "symfony/security-http": "^5.3",
-        "symfony/translation": "^5.3",
-        "symfony/validator": "^5.3",
+        "symfony/messenger": "^5.4",
+        "symfony/security-core": "^5.4",
+        "symfony/security-csrf": "^5.4",
+        "symfony/security-http": "^5.4",
+        "symfony/translation": "^5.4",
+        "symfony/validator": "^5.4",
         "twig/twig": "^3.3"
     },
     "config": {
@@ -43,7 +43,7 @@
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2-dev"
+            "dev-master": "0.3-dev"
         }
     }
 }
