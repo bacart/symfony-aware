@@ -13,16 +13,16 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Traits;
 
-use Doctrine\ODM\MongoDB\DocumentManager;
+use Symfony\Component\Security\Core\Security;
 use Symfony\Contracts\Service\Attribute\Required;
 
-trait DocumentManagerAwareTrait
+trait SecurityAwareTrait
 {
-    protected DocumentManager $documentManager;
+    protected Security $security;
 
     #[Required]
-    public function setDocumentManager(DocumentManager $documentManager): void
+    public function setSecurity(Security $security): void
     {
-        $this->documentManager = $documentManager;
+        $this->security = $security;
     }
 }

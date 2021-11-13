@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Doctrine\ODM\MongoDB\DocumentManager;
+use Symfony\Component\Security\Core\Security;
 
-interface DocumentManagerAwareInterface
+interface SecurityAwareInterface
 {
-    public function setDocumentManager(DocumentManager $documentManager): void;
+    public function setSecurity(Security $security): void;
 }
