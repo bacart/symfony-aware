@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Traits;
 
-use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;
+use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Contracts\Service\Attribute\Required;
 
 trait SerializerAwareTrait

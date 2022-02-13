@@ -13,7 +13,7 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;
+use Symfony\Component\Serializer\SerializerInterface;
 
 interface SerializerAwareInterface
 {
