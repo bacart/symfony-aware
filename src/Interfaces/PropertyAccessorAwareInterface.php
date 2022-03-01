@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Symfony\Component\Mercure\HubInterface;
+use Symfony\Component\PropertyAccess\PropertyAccessorInterface;
 
-interface MercureHubAwareInterface
+interface PropertyAccessorAwareInterface
 {
-    public function setMercureHub(HubInterface $mercureHub): void;
+    public function setPropertyAccessor(PropertyAccessorInterface $propertyAccessor): void;
 }

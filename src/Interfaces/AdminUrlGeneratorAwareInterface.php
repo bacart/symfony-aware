@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Symfony\Component\Mercure\HubInterface;
+use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 
-interface MercureHubAwareInterface
+interface AdminUrlGeneratorAwareInterface
 {
-    public function setMercureHub(HubInterface $mercureHub): void;
+    public function setAdminUrlGenerator(AdminUrlGenerator $adminUrlGenerator): void;
 }
