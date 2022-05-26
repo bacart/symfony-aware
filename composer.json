@@ -15,9 +15,9 @@
     },
     "require-dev": {
         "doctrine/orm": "^2.11",
-        "easycorp/easyadmin-bundle": "^4.0",
-        "friendsofphp/php-cs-fixer": "^3.6",
-        "phpstan/phpstan": "^1.4",
+        "easycorp/easyadmin-bundle": "^4.2",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "phpstan/phpstan": "^1.7",
         "roave/security-advisories": "dev-latest",
         "symfony/framework-bundle": "^6.0",
         "symfony/lock": "6.0.*",
@@ -30,7 +30,7 @@
         "symfony/serializer": "6.0.*",
         "symfony/translation": "6.0.*",
         "symfony/validator": "6.0.*",
-        "twig/twig": "^3.3"
+        "twig/twig": "^3.4"
     },
     "config": {
         "sort-packages": true,
@@ -48,10 +48,5 @@
             "name": "Alex Bacart",
             "email": "alex@bacart.net"
         }
-    ],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.3-dev"
-        }
-    }
+    ]
 }
