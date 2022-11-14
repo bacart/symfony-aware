@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-$fileHeaderComment = <<<COMMENT
+const FILE_HEADER_COMMENT = <<<COMMENT
 This file is part of the Bacart package.
 
 (c) Alex Bacart <alex@bacart.net>
@@ -19,7 +19,7 @@ return (new PhpCsFixer\Config())
         'array_syntax'                          => ['syntax' => 'short'],
         'binary_operator_spaces'                => ['default' => 'align'],
         'native_function_invocation'            => ['include' => ['@compiler_optimized']],
-        'header_comment'                        => ['header' => $fileHeaderComment, 'separate' => 'both'],
+        'header_comment'                        => ['header' => FILE_HEADER_COMMENT, 'separate' => 'both'],
         'phpdoc_add_missing_param_annotation'   => false,
         'self_accessor'                         => false,
         'fopen_flags'                           => false,

@@ -17,16 +17,16 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Traits;
 
-use Symfony\Component\Security\Core\Security;
+use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Contracts\Service\Attribute\Required;
 
-trait SecurityAwareTrait
+trait RequestStackAwareTrait
 {
-    protected Security $security;
+    protected RequestStack $requestStack;
 
     #[Required]
-    public function setSecurity(Security $security): void
+    public function setRequestStack(RequestStack $requestStack): void
     {
-        $this->security = $security;
+        $this->requestStack = $requestStack;
     }
 }

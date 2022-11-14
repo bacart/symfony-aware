@@ -17,9 +17,9 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Symfony\Component\Serializer\Normalizer\DenormalizerInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
 
-interface DenormalizerAwareInterface
+interface RequestStackAwareInterface
 {
-    public function setDenormalizer(DenormalizerInterface $denormalizer): void;
+    public function setRequestStack(RequestStack $requestStack): void;
 }

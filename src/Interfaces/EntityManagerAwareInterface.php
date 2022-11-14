@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @noinspection PhpUnused
+ */
+
 declare(strict_types=1);
 
 /*
@@ -17,5 +21,5 @@ use Doctrine\ORM\EntityManagerInterface;
 
 interface EntityManagerAwareInterface
 {
-    public function setEntityManager(EntityManagerInterface $em): void;
+    public function setEntityManager(EntityManagerInterface $entityManager): void;
 }

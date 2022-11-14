@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @noinspection PhpUnused
+ */
+
 declare(strict_types=1);
 
 /*
@@ -18,11 +22,11 @@ use Symfony\Contracts\Service\Attribute\Required;
 
 trait EntityManagerAwareTrait
 {
-    protected EntityManagerInterface $em;
+    protected EntityManagerInterface $entityManager;
 
     #[Required]
-    public function setEntityManager(EntityManagerInterface $em): void
+    public function setEntityManager(EntityManagerInterface $entityManager): void
     {
-        $this->em = $em;
+        $this->entityManager = $entityManager;
     }
 }

@@ -17,16 +17,16 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Traits;
 
-use Symfony\Component\Security\Core\Security;
+use Symfony\Component\Translation\LocaleSwitcher;
 use Symfony\Contracts\Service\Attribute\Required;
 
-trait SecurityAwareTrait
+trait LocaleSwitcherAwareTrait
 {
-    protected Security $security;
+    protected LocaleSwitcher $localeSwitcher;
 
     #[Required]
-    public function setSecurity(Security $security): void
+    public function setLocaleSwitcher(LocaleSwitcher $localeSwitcher): void
     {
-        $this->security = $security;
+        $this->localeSwitcher = $localeSwitcher;
     }
 }

@@ -19,10 +19,7 @@ cs: ## Run php-cs-fixer fix
 	php ./vendor/bin/php-cs-fixer fix --verbose -vvv --path-mode=intersection ./src
 
 pst: ## Run phpstan analyse
-	php ./vendor/bin/phpstan analyse --level 8 ./src
-
-pu: ## Run phpunit
-	php ./vendor/bin/simple-phpunit
+	php ./vendor/bin/phpstan analyse --memory-limit=-1 --level=8 ./src
 
 ch: ## Run all checks
 	make cs && make pst
