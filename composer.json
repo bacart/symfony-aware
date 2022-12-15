@@ -1,14 +1,18 @@
 {
     "name": "bacart/symfony-aware",
     "description": "Symfony service awareness library",
-    "type": "library",
     "license": "MIT",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
+    "type": "library",
     "keywords": [
         "php",
         "symfony",
         "library"
+    ],
+    "authors": [
+        {
+            "name": "Alex Bacart",
+            "email": "alex@bacart.net"
+        }
     ],
     "require": {
         "php": ">=8.1"
@@ -16,6 +20,7 @@
     "require-dev": {
         "doctrine/orm": "^2.13",
         "easycorp/easyadmin-bundle": "^4.4",
+        "ergebnis/composer-normalize": "^2.29",
         "friendsofphp/php-cs-fixer": "^3.13",
         "phpstan/phpstan": "^1.9",
         "roave/security-advisories": "dev-latest",
@@ -32,21 +37,18 @@
         "symfony/validator": "6.2.*",
         "twig/twig": "^3.4"
     },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "composer/package-versions-deprecated": true
-        }
-    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Bacart\\SymfonyAware\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Alex Bacart",
-            "email": "alex@bacart.net"
-        }
-    ]
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    }
 }
