@@ -19,9 +19,9 @@
     },
     "require-dev": {
         "doctrine/orm": "^2.15",
-        "easycorp/easyadmin-bundle": "^4.6",
-        "ergebnis/composer-normalize": "^2.31",
-        "friendsofphp/php-cs-fixer": "^3.18",
+        "easycorp/easyadmin-bundle": "^4.7",
+        "ergebnis/composer-normalize": "^2.34",
+        "friendsofphp/php-cs-fixer": "^3.22",
         "phpstan/phpstan": "^1.10",
         "roave/security-advisories": "dev-latest",
         "symfony/framework-bundle": "6.3.*",
@@ -35,7 +35,7 @@
         "symfony/serializer": "6.3.*",
         "symfony/translation": "6.3.*",
         "symfony/validator": "6.3.*",
-        "twig/twig": "^3.6"
+        "twig/twig": "^3.7"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
