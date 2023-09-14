@@ -19,7 +19,7 @@ cs: ## Run php-cs-fixer fix
 	php ./vendor/bin/php-cs-fixer fix --verbose
 
 pst: ## Run phpstan analyse
-	php ./vendor/bin/phpstan analyse --memory-limit=-1 --level=8 ./src
+	php ./vendor/bin/phpstan analyse --memory-limit=-1
 
 ch: ## Run all checks
 	make cs && make pst
