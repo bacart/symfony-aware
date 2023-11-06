@@ -22,11 +22,11 @@ use Symfony\Contracts\Service\Attribute\Required;
 
 trait EventDispatcherAwareTrait
 {
-    protected EventDispatcherInterface $dispatcher;
+    protected EventDispatcherInterface $eventDispatcher;
 
     #[Required]
-    public function setEventDispatcher(EventDispatcherInterface $dispatcher): void
+    public function setEventDispatcher(EventDispatcherInterface $eventDispatcher): void
     {
-        $this->dispatcher = $dispatcher;
+        $this->eventDispatcher = $eventDispatcher;
     }
 }
