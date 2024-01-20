@@ -17,16 +17,16 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Traits;
 
-use Symfony\Component\Routing\Router;
+use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
 use Symfony\Contracts\Service\Attribute\Required;
 
-trait RouterStackAwareTrait
+trait ClientRegistryAwareTrait
 {
-    protected Router $router;
+    protected ClientRegistry $clientRegistry;
 
     #[Required]
-    public function setRouter(Router $router): void
+    public function setClientRegistry(ClientRegistry $clientRegistry): void
     {
-        $this->router = $router;
+        $this->clientRegistry = $clientRegistry;
     }
 }
