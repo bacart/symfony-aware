@@ -17,9 +17,9 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Interfaces;
 
-use Symfony\Component\Routing\Router;
+use Symfony\Component\Routing\RouterInterface;
 
 interface RouterAwareInterface
 {
-    public function setRouter(Router $router): void;
+    public function setRouter(RouterInterface $router): void;
 }

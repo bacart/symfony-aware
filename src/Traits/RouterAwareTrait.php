@@ -17,15 +17,15 @@ declare(strict_types=1);
 
 namespace Bacart\SymfonyAware\Traits;
 
-use Symfony\Component\Routing\Router;
+use Symfony\Component\Routing\RouterInterface;
 use Symfony\Contracts\Service\Attribute\Required;
 
 trait RouterAwareTrait
 {
-    protected Router $router;
+    protected RouterInterface $router;
 
     #[Required]
-    public function setRouter(Router $router): void
+    public function setRouter(RouterInterface $router): void
     {
         $this->router = $router;
     }
