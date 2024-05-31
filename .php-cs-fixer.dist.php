@@ -38,5 +38,6 @@ return (new PhpCsFixer\Config())
         'strict_param'                          => true,
         'final_internal_class'                  => true,
     ])
+    ->setParallelConfig(PhpCsFixer\Runner\Parallel\ParallelConfigFactory::detect())
     ->setRiskyAllowed(true)
     ->setFinder($finder);
